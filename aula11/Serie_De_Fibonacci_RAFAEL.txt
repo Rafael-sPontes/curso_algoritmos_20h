@@ -1,0 +1,17 @@
+algoritmo "Serie_De_Fibonacci_RAFAEL"
+var
+   //Declaração de variáveis
+   cont, c1, c2, c3: inteiro
+inicio
+      //Declaração de valores
+      c1 <- 0
+      c2 <- 1
+      
+      //Condicional
+      para cont <- 1 ate 14 faca
+           escreva(c3)
+           c3 <- c1 + c2
+           c1 <- c2
+           c2 <- c3
+      fimpara
+fimalgoritmo

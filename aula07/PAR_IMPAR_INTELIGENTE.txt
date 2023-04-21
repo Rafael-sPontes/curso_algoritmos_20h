@@ -1,0 +1,16 @@
+algoritmo "PAR_IMPAR_INTELIGENTE"
+var
+   //declaração de variáveis
+   num: inteiro
+inicio
+      //entrada de dados
+      escreva("Digite um número: ")
+      leia (num)
+
+      //Condicionais
+      se (num % 2 = 0) entao
+         escreva("O número digitado:", num, " é [PAR]")
+      senao
+           escreva("O número digitado:", num, " é [IMPAR]")
+      fimse
+fimalgoritmo

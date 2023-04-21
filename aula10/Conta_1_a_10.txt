@@ -1,0 +1,14 @@
+algoritmo "Conta_1_a_10"
+var
+   //Declaração de variáveis
+   cont: inteiro
+inicio
+      //Declaração de valores
+      cont <- 1
+      
+      //Condicional
+      repita
+            escreval(cont)
+            cont <- cont + 1
+      ate (cont > 10)
+fimalgoritmo

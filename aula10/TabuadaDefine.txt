@@ -1,0 +1,19 @@
+algoritmo "TabuadaDefine"
+var
+   //Declaração de variáveis
+   cont, n, res: inteiro
+inicio
+      //Declaração de valores
+      cont <- 1
+      
+      //Entrada de Dados
+      escreva("Quer ver a tabuada de qual número? ")
+      leia(n)
+
+      //Condicional
+      repita
+            res <- n * cont
+            escreval(n, " x", cont, " =", res)
+            cont <- cont + 1
+      ate (cont > 10)
+fimalgoritmo

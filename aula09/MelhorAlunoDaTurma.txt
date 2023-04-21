@@ -1,0 +1,44 @@
+algoritmo "MelhorAlunoDaTurma"
+var
+   //Declaração de variáveis
+   quant, cont: inteiro
+   nota, maiornota: real
+   aluno, nome: caractere
+inicio
+      //Declaração de Valores
+      cont <- 1
+
+      //Título
+      escreval("------------------------")
+      escreval(" Escola Santa Paciência ")
+      escreval("------------------------")
+      escreval("")
+      
+      //Entrada de Dados
+      escreva("Quantos alunos tem na turma? ")
+      leia(quant)
+      escreval("")
+      
+      //Condicionais
+      enquanto (cont <= quant) faca
+               escreva("Nome do Aluno: ")
+               leia(aluno)
+               escreva("Nota de ", aluno,": ")
+               leia(nota)
+               escreval("----------------------")
+
+               //Condição
+               se (maiornota < nota) entao
+                  maiornota <- nota
+                  nome <- aluno
+               fimse
+
+               //Contador
+               cont <- cont + 1
+      fimenquanto
+      escreval("")
+      
+      //Declaração de Resultados
+      escreva("O melhor aproveitamento foi de ", nome, " com nota", maiornota)
+      escreval("")
+fimalgoritmo

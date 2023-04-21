@@ -1,0 +1,47 @@
+algoritmo "matrizPar"
+var
+   //Declaração de variáveis
+   val: vetor[1..3, 1..3] de inteiro
+   l, c, totPar: inteiro
+inicio
+      //Repetição
+      para l <- 1 ate 3 faca
+           //Repetição
+           para c <- 1 ate 3 faca
+                //Saída de dados
+                escreva("Digite o valor da posição [", l,",", c, " ] : ")
+                leia(val[l,c])
+           fimpara
+      fimpara
+      
+      escreval()
+      
+      //Título
+      escreval(" MATRIZ ")
+      escreval("--------")
+      
+      //Declaração de valores
+      totPar <- 0
+      
+      //Repetição
+      para l <- 1 ate 3 faca
+           //Repetição
+           para c <- 1 ate 3 faca
+                //Condicional
+                se (val[l,c] % 2 = 0) entao
+                   //Saída de dados
+                   escreva("[", val[l,c]:2, "]")
+                   //Cálculos
+                   totPar <- totPar + 1
+                senao
+                     escreva(val[l,c]:4)
+                fimse
+           fimpara
+           //Saída de dados
+           escreval()
+      fimpara
+      
+      //Saída de dados
+      escreval()
+      escreval("Ao todo foram digitados", totPar, " valores PARES")
+fimalgoritmo

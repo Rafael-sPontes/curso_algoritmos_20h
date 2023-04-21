@@ -1,0 +1,18 @@
+algoritmo "FazSomaProcedimento"
+var
+   //Declaração de variáveis
+   x, y: inteiro
+inicio
+      //Procedimento
+      procedimento soma(a, b: inteiro)
+      inicio
+            escreval("Recebi o valor: ", a)
+            escreval("Recebi o valor: ", b)
+            escreval("A soma entre os valores é: ", a + b)
+      fimprocedimento
+      
+      //Declaração de valores
+      x <- 5
+      y <- 3
+      soma(x, y)
+fimalgoritmo

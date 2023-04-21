@@ -1,0 +1,12 @@
+algoritmo "Creuza01"
+var
+   ano_atual, ano_nascimento, idade: inteiro
+inicio
+      escreval ("Em que ano estamos?")
+      leia (ano_atual)
+      escreval ("Em que ano eu nasci?")
+      leia (ano_nascimento)
+      escreval ("Atual", ano_atual, " menos nascimento", ano_nascimento)
+      idade <- ano_atual - ano_nascimento
+      escreva ("Minha idade atual é:", idade, " anos")
+fimalgoritmo

@@ -1,0 +1,24 @@
+algoritmo "triangulos"
+var
+   //Declaração de variáveis
+   L1, L2, L3: real
+   EQ, ES, TRI: logico
+inicio
+      //Declarar o valor dos três lados do triangulo
+      escreva("Digite os valor do primeiro lado: ")
+      leia (L1)
+      escreva("Digite os valor do segundo lado: ")
+      leia (L2)
+      escreva("Digite os valor do terceiro lado: ")
+      leia (L3)
+
+      //Verificar o tipo do triangulo
+      EQ <- (L1=L2) e (L2=L3)
+      ES <- (L1<>L2) e (L2<>L3) e (L2<>L3)
+      TRI <- (L1 < L2+L3) e (L2 < L1+L3) e (L3 < L1+L2)
+
+      //Exibição do resultado
+      escreval ("O triangulo é equilátero? ", EQ)
+      escreval ("O triangulo é escaleno? ", ES)
+      escreval ("Pode formar um triangulo? ", TRI)
+fimalgoritmo

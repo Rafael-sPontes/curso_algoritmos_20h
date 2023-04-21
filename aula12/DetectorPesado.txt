@@ -1,0 +1,48 @@
+algoritmo "DetectorPesado"
+var
+   //Declaração de variáveis
+   i: inteiro
+   n, pesado: caractere
+   p, mai: real
+   
+procedimento topo()
+inicio
+      //Comando LimpaTela
+      limpatela
+
+      //Título
+      escreval("------------------------------------")
+      escreval(" D E T E C T O R   DE   P E S A D O ")
+      escreval(" Maior peso até agora: ", mai, "Kg")
+      escreval("------------------------------------")
+fimprocedimento
+
+inicio
+      //Procedimento Topo
+      topo()
+
+      //Condicional
+      para i <- 1 ate 5 faca
+
+           //Entrada de dados
+           escreva("Digite o nome: ")
+           leia(n)
+           escreva("Digite o peso ", n, ": ")
+           leia(p)
+
+           //Condicional
+           se (p > mai) entao
+              mai <- p
+              pesado <- n
+           fimse
+
+           //Procedimento Topo
+           topo()
+      fimpara
+      
+      //Procedimento Topo
+      topo()
+      
+      //Saída de dados
+      escreval("A pessoa mais pesada foi ", pesado, ", com", mai, " quilos")
+fimalgoritmo

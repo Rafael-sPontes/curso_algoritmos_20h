@@ -1,0 +1,21 @@
+algoritmo "SomadorDefine"
+var
+   //Declaração de variáveis
+   cont, n, v, res: inteiro
+inicio
+      //Entrada de dados
+      escreva("Quantos valores vão ser digitados? ")
+      leia(v)
+      escreval()
+      
+      //Condicional
+      para cont <- 1 ate v faca
+           escreva("Digite um valor: ")
+           leia(n)
+           res <- res + n
+      fimpara
+
+      //Saída de dados
+      escreval("A soma dos valores é igual: ", res)
+      escreval()
+fimalgoritmo

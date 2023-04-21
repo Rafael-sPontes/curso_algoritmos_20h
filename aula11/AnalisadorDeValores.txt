@@ -1,0 +1,41 @@
+algoritmo "AnalisadorDeValores"
+var
+   //Declaração de variáveis
+   cont, n, sv, d5, vn, sp: inteiro
+   mv: real
+inicio
+      //Declaração de valores
+      
+      //Condicional
+      para cont <- 1 ate 5 faca
+           escreva("Digite o", cont, "º valor: ")
+           leia(n)
+           
+           //Soma dos valores
+           sv <- sv + n
+           
+           //Média de valores
+           mv <- sv / 5
+
+           //Condicional
+           se (n = 0) entao
+              vn <- vn + 1
+           fimse
+           
+           //Condicional
+           se (n % 5 = 0) entao
+              d5 <- d5 + 1
+           fimse
+           
+           //Condicional
+           se (n % 2 = 0) entao
+              sp <- sp + n
+           fimse
+      fimpara
+      
+      escreval("A soma entre os valores é igual: ", sv)
+      escreval("A média entre os valores é igual: ", mv)
+      escreval("A quantidade de valores divisíveis por 5 é igual: ", d5)
+      escreval("A quantidade de valores nulos é igual: ", vn)
+      escreval("A soma dos valores pares é igual: ", sp)
+fimalgoritmo

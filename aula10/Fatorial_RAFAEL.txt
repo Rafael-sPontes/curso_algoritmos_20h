@@ -1,0 +1,33 @@
+algoritmo "Fatorial_RAFAEL"
+var
+   //Declaração de variáveis
+   n, ni, res: inteiro
+   resp: caractere
+inicio
+      repita
+            //Declaração de variáveis
+            escreval("")
+            escreva("Digite um número: ")
+            leia(n)
+            escreval("")
+
+            //Condicional
+            se (n > 0) entao
+            ni <- n
+            res <- 1
+               repita
+                     escreva(n, " x")
+                     res <- res * n
+                     n <- n - 1
+               ate (n <= 0)
+               escreval("")
+               escreval("O fatorial de", ni, " é igual:", res)
+            senao
+                 escreval("O número digitado não é positivo")
+            fimse
+
+            escreval("")
+            escreva("Você quer Digitar outro número? [S/N]: ")
+            leia(resp)
+      ate (resp = "N")
+fimalgoritmo

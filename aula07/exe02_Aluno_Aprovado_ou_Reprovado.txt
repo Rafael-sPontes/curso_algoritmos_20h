@@ -1,0 +1,33 @@
+algoritmo "Aluno_Aprovado_ou_Reprovado"
+var
+   n1, n2, media: real
+inicio
+      //Título
+      escreval("---------------------------")
+      escreval("  ESCOLA JAVALI CANSADO")
+      escreval("---------------------------")
+      escreval("")
+      
+      //Entrada de Dados
+      escreva("Digite a Primeira Nota: ")
+      leia(n1)
+      escreva("Digite a Segunda Nota: ")
+      leia(n2)
+      escreval("")
+      
+      //Cálculos
+      media <- (n1 + n2) / 2
+      
+      //Resultados
+      se (media >= 7) entao
+         escreval("-----------------")
+         escreval(" Média: ", media:3:1)
+         escreval(" ALUNO APROVADO")
+         escreval("-----------------")
+      senao
+           escreval("-----------------")
+           escreval("Média: ", media:3:1)
+           escreval("ALUNO REPROVADO")
+           escreval("-----------------")
+      fimse
+fimalgoritmo

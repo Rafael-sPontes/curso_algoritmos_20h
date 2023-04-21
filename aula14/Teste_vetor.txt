@@ -1,0 +1,19 @@
+algoritmo "Teste_vetor"
+var
+   //Declaração de variáveis
+   v: vetor[1..6] de inteiro
+   c: inteiro
+inicio
+      //Repetição
+      para c <- 1 ate 6 faca
+           //Entrada de dados
+           escreva("Digite o", c, "º valor: ")
+           leia(v[c])
+      fimpara
+      
+      //Repetição
+      para c <- 1 ate 6 faca
+           //Saída de dados
+           escreva("[", v[c], " ]")
+      fimpara
+fimalgoritmo

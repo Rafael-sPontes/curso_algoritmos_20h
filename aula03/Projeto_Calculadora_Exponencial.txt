@@ -1,0 +1,18 @@
+algoritmo "Projeto_Calculadora_Exponencial"
+var
+   //Declaração de variáveis
+   intr: inteiro
+   n1, n2, absl, expo, raizquad, rpi, seno, cose, tang, grad: real
+inicio
+      //Entrada de dados
+      escreva ("Digite o número: ")
+      leia (n1)
+      escreva ("Escolha a potência: ")
+      leia (n2)
+      
+      //Cálculos
+      expo <- exp(n1, n2)
+      
+      //Saída de dados
+      escreva ("O valor exponencial é igual a: ", expo)
+fimalgoritmo

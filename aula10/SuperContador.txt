@@ -1,0 +1,48 @@
+algoritmo "SuperContador"
+var
+   //Declaração de variáveis
+   sel, cont: inteiro
+inicio
+      //Entrada de valores
+      repita
+      
+      //Título
+      escreval("==================")
+      escreval("|   M  E  N  U   |")
+      escreval("==================")
+
+      //Tela de seleção
+      escreval("| [1] De 1 a 10  |")
+      escreval("| [2] De 10 a 1  |")
+      escreval("| [3] Sair       |")
+      escreval("==================")
+      escreval()
+
+      //Entrada de Dados
+      escreva("Selecione uma das opções acima: ")
+      leia(sel)
+      escreval()
+      
+            se (sel = 1) entao
+               cont <- 1
+               repita
+                     escreva(cont, ";")
+                     cont <- cont + 1
+               ate (cont > 10)
+               escreval()
+               escreval()
+            senao
+                 se (sel = 2) entao
+                    cont <- 10
+                    repita
+                          escreva(cont, ";")
+                          cont <- cont - 1
+                    ate (cont = 0)
+                    escreval()
+                    escreval()
+                 fimse
+            fimse
+      ate (sel = 3)
+      escreva("SAINDO...")
+      escreval()
+fimalgoritmo

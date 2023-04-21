@@ -1,0 +1,26 @@
+algoritmo "ParOuImpar_FUNCAO"
+var
+   //Declaração de variáveis
+   n: inteiro
+   r: caractere
+
+funcao ParOuImpar(v: inteiro): caractere
+inicio
+      se (v % 2 = 0) entao
+         retorne "PAR"
+      senao
+           retorne "IMPAR"
+      fimse
+fimfuncao
+
+inicio
+      //Entrada de dados
+      escreva("Digite um número: ")
+      leia(n)
+      
+      //Chamada da função
+      r <- ParOuImpar(n)
+      
+      //Saída de dados
+      escreva("O número [", n, " ] é um valor ", r)
+fimalgoritmo

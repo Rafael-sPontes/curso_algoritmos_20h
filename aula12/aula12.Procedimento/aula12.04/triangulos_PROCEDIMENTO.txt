@@ -1,0 +1,31 @@
+algoritmo "triangulos_PROCEDIMENTO"
+var
+   //Declaração de variáveis
+   L1, L2, L3: real
+   EQ, ES, TRI: logico
+   
+procedimento trig(i1, i2, i3: real)
+inicio
+      //Verificar o tipo do triangulo
+      EQ <- (i1=i2) e (i2=i3)
+      ES <- (i1<>i2) e (i2<>i3) e (i2<>i3)
+      TRI <- (i1 < i2+i3) e (i2 < i1+i3) e (i3 < i1+i2)
+fimprocedimento
+   
+inicio
+      //Declarar o valor dos três lados do triangulo
+      escreva("Digite os valor do primeiro lado: ")
+      leia (L1)
+      escreva("Digite os valor do segundo lado: ")
+      leia (L2)
+      escreva("Digite os valor do terceiro lado: ")
+      leia (L3)
+
+      //Procedimento
+      trig(L1, L2, L3)
+
+      //Exibição do resultado
+      escreval ("O triangulo é equilátero? ", EQ)
+      escreval ("O triangulo é escaleno? ", ES)
+      escreval ("Pode formar um triangulo? ", TRI)
+fimalgoritmo

@@ -1,0 +1,41 @@
+algoritmo "Criança_Esperança_CASO"
+var
+   //Declaração das Variáveis
+   doacao, valor: inteiro
+inicio
+      //Entrada de Dados
+      escreval("---------------------------")
+      escreval("     CRIANÇA ESPERANÇA     ")
+      escreval("---------------------------")
+      escreval(" Muito Obrigado por Ajudar ")
+      escreval("")
+      escreval("[1] Para Doar R$10,00")
+      escreval("[2] Para Doar R$25,00")
+      escreval("[3] Para Doar R$50,00")
+      escreval("[4] Para Doar Outros Valores")
+      escreval("[5] Para Cancelar")
+      escreval("")
+      escreva("Escolha Sua Doação: ")
+      leia(doacao)
+      
+      //Condicionais_CASO
+      escolha doacao
+              caso 1
+                   valor <- 10
+              caso 2
+                   valor <- 25
+              caso 3
+                   valor <- 50
+              caso 4
+                   escreva("Digite o Valor da Doação: R$")
+                   leia(valor)
+              caso 5
+                   valor <- 0
+      fimescolha
+
+      escreval("")
+      escreval("---------------------------")
+      escreval(" SUA DOAÇÃO FOI DE: R$",valor:5:2, " Reais")
+      escreval(" MUITO OBRIGADO!")
+      escreval("---------------------------")
+fimalgoritmo

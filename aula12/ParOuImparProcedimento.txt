@@ -1,0 +1,20 @@
+algoritmo "ParOuImparProcedimento"
+var
+   //Declaração d e variáveis
+   n: inteiro
+
+   //Procedimento
+   procedimento ParOuImpar (v: inteiro)
+   inicio
+         se (v % 2 = 0) entao
+            escreval("O número", v, " é PAR")
+         senao
+              escreval("O número", v, " é IMPAR")
+         fimse
+   fimprocedimento
+   
+inicio
+      escreva("Digite um número: ")
+      leia(n)
+      ParOuImpar(n)
+fimalgoritmo

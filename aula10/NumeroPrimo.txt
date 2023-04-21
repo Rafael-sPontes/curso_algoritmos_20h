@@ -1,0 +1,39 @@
+algoritmo "NumeroPrimo"
+var
+   //Declaração de variáveis
+   cont, n, qtdiv: inteiro
+   ndiv: caractere
+inicio
+      //Entrada de Dados
+      escreva("Digite um número: ")
+      leia(n)
+      escreval()
+      
+      //Entrada de Valores
+      cont <- 1
+      qtdiv <- 0
+      
+      //Condicinal
+      repita
+            escreva(cont, ";")
+
+            se (n % cont = 0) entao
+               qtdiv <- qtdiv + 1
+            fimse
+            
+            cont <- cont + 1
+      ate (cont > n)
+      escreval()
+
+      //Saída de dados
+      escreval()
+      se (qtdiv > 2) entao
+         escreval("Ao todo existem [", qtdiv, " ] valores divisíveis")
+         escreva("Portanto [", n, " ] não é um número primo")
+      senao
+           escreval("Ao todo existem [", qtdiv, " ] valores divisíveis")
+           escreva("Portanto", n, " é um número primo")
+      fimse
+
+      escreval()
+fimalgoritmo

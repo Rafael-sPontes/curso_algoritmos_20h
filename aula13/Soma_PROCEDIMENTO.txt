@@ -1,0 +1,18 @@
+algoritmo "Soma_PROCEDIMENTO"
+var
+   //Declaração de variáveis
+   n1, n2: inteiro
+   
+procedimento soma(a, b: inteiro)
+var
+   s: inteiro
+inicio
+      s <- a + b
+      escreval("A soma vale: ", s)
+fimprocedimento
+
+inicio
+      n1 <- 5
+      n2 <- 4
+      soma(n1, n2)
+fimalgoritmo

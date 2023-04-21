@@ -1,0 +1,61 @@
+algoritmo "Aproveitamento_Aluno"
+var
+   n1, n2, media: real
+inicio
+      //Título
+      escreval("---------------------------")
+      escreval("  ESCOLA JAVALI CANSADO")
+      escreval("---------------------------")
+      escreval("")
+
+      //Entrada de Dados
+      escreva("Digite a Primeira Nota: ")
+      leia(n1)
+      escreva("Digite a Segunda Nota: ")
+      leia(n2)
+      escreval("")
+
+      //Cálculos
+      media <- (n1 + n2) / 2
+
+      //Resultados
+      se (media >= 9) entao
+         escreval("-------------------")
+         escreval(" Média: ", media:3:1)
+         escreval(" CLASSIFICAÇÃO [A]")
+         escreval("-------------------")
+      senao
+           se (media < 9) e (media >= 8) entao
+             escreval("-------------------")
+             escreval(" Média: ", media:3:1)
+             escreval(" CLASSIFICAÇÃO [B]")
+             escreval("-------------------")
+           senao
+                se (media < 8) e (media >= 7) entao
+                   escreval("-------------------")
+                   escreval(" Média: ", media:3:1)
+                   escreval(" CLASSIFICAÇÃO [C]")
+                   escreval("-------------------")
+                senao
+                     se (media < 7) e (media >= 6) entao
+                        escreval("-------------------")
+                        escreval(" Média: ", media:3:1)
+                        escreval(" CLASSIFICAÇÃO [D]")
+                        escreval("-------------------")
+                     senao
+                          se (media < 6) e (media >= 5) entao
+                             escreval("-------------------")
+                             escreval(" Média: ", media:3:1)
+                             escreval(" CLASSIFICAÇÃO [E]")
+                             escreval("-------------------")
+                          senao
+                               escreval("-------------------")
+                               escreval(" Média: ", media:3:1)
+                               escreval(" CLASSIFICAÇÃO [F]")
+                               escreval("-------------------")
+                          fimse
+                     fimse
+                fimse
+           fimse
+      fimse
+fimalgoritmo

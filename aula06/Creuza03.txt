@@ -1,0 +1,9 @@
+algoritmo "Creuza03"
+var
+   C, F: real
+inicio
+      escreval("Qual é a temperatura aqui?")
+      leia (F)
+      C <- (F-32)/1.8
+      escreval("No Brasil estaria ", C:4:1, " graus Célcius")
+fimalgoritmo

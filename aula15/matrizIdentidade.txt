@@ -1,0 +1,32 @@
+algoritmo "matrizIdentidade"
+var
+   //Declaração de variáveis
+   mID: vetor[1..4, 1..4] de inteiro
+   i, j: inteiro
+inicio
+      //Repetição
+      para i <- 1 ate 4 faca
+           //Repetição
+           para j <- 1 ate 4 faca
+                //Condicional
+                se (i = j) entao
+                   //Cálculos
+                   mID[i,j] <- 1
+                senao
+                     //Cálculos
+                     mID[i,j] <- 0
+                fimse
+           fimpara
+      fimpara
+      
+      //Repetição
+      para i <- 1 ate 4 faca
+           //Repetição
+           para j <- 1 ate 4 faca
+                //Saída de dados
+                escreva(mID[i,j]:3)
+           fimpara
+           //Saída de dados
+           escreval()
+      fimpara
+fimalgoritmo

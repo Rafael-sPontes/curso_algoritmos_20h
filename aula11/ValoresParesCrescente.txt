@@ -1,0 +1,14 @@
+algoritmo  "ValoresParesCrescente"
+var
+   //Declaração de variáveis
+   cont, v: inteiro
+inicio
+      //Entrada de dados
+      escreva("Digite um valor: ")
+      leia(v)
+      
+      //Condicional
+      para cont <- 0 ate v passo 2 faca
+           escreva(cont)
+      fimpara
+fimalgoritmo

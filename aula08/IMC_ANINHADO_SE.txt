@@ -1,0 +1,49 @@
+algoritmo "IMC_ANINHADO_SE"
+var
+   //delacaração de variáveis
+   altura, massa, imc: real
+inicio
+      //estrada de dados
+      escreva("Quanto você pesa? (Kg): ")
+      leia(massa)
+      escreva("Qual sua altura? ")
+      leia(altura)
+
+      //Cálculos
+      imc <- massa / (altura ^ 2)
+
+      //Condicionais
+      
+      se (imc < 17) entao
+         escreval("Seu IMC é: ", IMC:5:2)
+         escreval("Muito abaixo do Peso")
+      senao
+           se (imc >= 17) e (imc < 18.5) entao
+              escreval("Seu IMC é: ", IMC:5:2)
+              escreval("Abaixo do Peso")
+           senao
+                se (imc >= 18.5) e (imc <= 25) entao
+                   escreval("Seu IMC é: ", IMC:5:2)
+                   escreval("Peso Ideal")
+                senao
+                     se (imc > 25) e (imc < 30) entao
+                        escreval("Seu IMC é: ", IMC:5:2)
+                        escreval("Sobrepeso")
+                     senao
+                          se (imc >=30) e (imc < 35) entao
+                             escreval("Seu IMC é: ", IMC:5:2)
+                             escreval("Obesidade")
+                          senao
+                               se (imc >= 35) e (imc < 40) entao
+                                  escreval("Seu IMC é: ", IMC:5:2)
+                                  escreval("Obesidade Severa")
+                               senao
+                                    escreval("Seu IMC é: ", IMC:5:2)
+                                    escreval("Obesidade Mórbida")
+                               fimse
+                          fimse
+                     fimse
+                fimse
+           fimse
+      fimse
+fimalgoritmo

@@ -1,0 +1,60 @@
+algoritmo "Partida_Futebol_SE"
+var
+   //Declaração de Variáveis
+   b, m, d:inteiro
+inicio
+      //Título
+      escreval("-------------------")
+      escreval(" BANGU x MADUREIRA ")
+      escreval("-------------------")
+      escreval("")
+
+      //Entrada de Dados
+      escreva("Quantos Gols fez BANGU? ")
+      leia(b)
+      escreva("Quantos Gols fez MADUREIRA? ")
+      leia(m)
+
+      //Condicionais_SE
+      se (b > m) entao
+         //Cálculo
+         d <- b - m
+           se (d >= 5) entao
+              //Resultado
+              escreval("--------------------------------")
+              escreval(" DIFERENÇA DE GOLS: ", d, " Gols")
+              escreval(" STATUS: GOLEADA DE BANGU")
+              escreval("--------------------------------")
+           senao
+                //Resultado
+                escreval("--------------------------------")
+                escreval(" DIFERENÇA DE GOLS: ", d, " Gols")
+                escreval(" STATUS: VITÓRIA DE BANGU")
+                escreval("--------------------------------")
+           fimse
+      senao
+           se (m > b) entao
+              //Cálculo
+              d <- m - b
+                se (d >= 5) entao
+                   //Resultado
+                   escreval("--------------------------------")
+                   escreval(" DIFERENÇA DE GOLS: ", d, " Gols")
+                   escreval(" STATUS: GOLEADA DE MADUREIRA")
+                   escreval("--------------------------------")
+                senao
+                     //Resultado
+                     escreval("--------------------------------")
+                     escreval(" DIFERENÇA DE GOLS: ", d, " Gols")
+                     escreval(" STATUS: VITÓRIA DE MADUREIRA")
+                     escreval("--------------------------------")
+                fimse
+           senao
+                //Resultado
+                escreval("--------------------------------")
+                escreval(" DIFERENÇA DE GOLS: ", d, " Gols")
+                escreval(" STATUS: EMPATE")
+                escreval("--------------------------------")
+           fimse
+      fimse
+fimalgoritmo

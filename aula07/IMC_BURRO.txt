@@ -1,0 +1,26 @@
+algoritmo "IMC_BURRO"
+var
+   //delacaração de variáveis
+   altura, massa, imc: real
+inicio
+      //estrada de dados
+      escreva("Quanto você pesa? ")
+      leia(massa)
+      escreva("Qual sua altura? ")
+      leia(altura)
+      
+      //Cálculos
+      imc <- massa / (altura ^ 2)
+      
+      //Condicionais
+      se (imc >= 25) entao
+         escreval("Seu IMC é: ", IMC:5:2)
+         escreva("Você está acima do Peso Ideal! OOO")
+      senao se (imc <= 18.5)
+            escreval("Seu IMC é: ", IMC:5:2)
+            escreva("Você está abaixo do Peso Ideal! |||")
+      senao
+           escreval("Seu IMC é: ", IMC:5:2)
+           escreva("Você está no seu Peso Ideal! VVV")
+      fimse
+fimalgoritmo

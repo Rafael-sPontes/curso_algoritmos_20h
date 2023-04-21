@@ -1,0 +1,36 @@
+algoritmo "QuantosEntre_0e10_ou_10e0"
+var
+   //Declaração de variáveis
+   cont, n1, n2, resp: inteiro
+inicio
+      //Entrada de dados
+      escreva("Digite o número inicial: ")
+      leia(n1)
+      escreva("Digite o número final: ")
+      leia(n2)
+      
+      //Entrada de valores
+      resp <- 0
+
+      //Condicional
+      se (n1 < n2) entao
+         para cont <- n1 ate n2 faca
+              se (cont >= 0) e (cont <= 10) entao
+                 resp <- resp + 1
+              fimse
+         fimpara
+      senao
+           se (n1 > n2) entao
+              para cont <- n1 ate n2 passo -1 faca
+                   se (cont >= 0) e (cont <= 10) entao
+                      resp <- resp + 1
+                   fimse
+              fimpara
+           fimse
+      fimse
+      
+      //Saída de dados
+      escreval()
+      escreva("Há", resp, " números entre 0 e 10, entre", n1, " e", n2)
+      escreval()
+fimalgoritmo

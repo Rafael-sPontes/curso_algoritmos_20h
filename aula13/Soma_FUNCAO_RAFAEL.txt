@@ -1,0 +1,19 @@
+algoritmo "Soma_FUNCAO_RAFAEL"
+var
+   //Declaração de variáveis
+   n1, n2, res: inteiro
+   
+funcao soma(a, b: inteiro): inteiro
+var
+   s: inteiro
+inicio
+      s <- a + b
+      retorne s
+fimfuncao
+
+inicio
+      n1 <- 5
+      n2 <- 4
+      res <- soma(n1, n2)
+      escreval("A soma vale: ", res)
+fimalgoritmo

@@ -1,0 +1,34 @@
+algoritmo "CampeonatoFutebol"
+var
+   //Declaração de variáveis
+   time: vetor[1..3] de caractere
+   t: caractere
+   i, j: inteiro
+inicio
+      //Título
+      escreval("-----------------------")
+      escreval(" CAMPEONATO DE FUTEBOL ")
+      escreval("-----------------------")
+      //Repetição
+      para i <-  1 ate 3 faca
+           //Entrada de dados
+           escreva("Nome do", i, "º time: ")
+           leia(time[i])
+      fimpara
+
+      //Título
+      escreval()
+      escreval(" CHAVES DE JOGO ")
+
+      //Repetição
+      para i <- 1 ate 3 faca
+           //Saída de dados
+           escreval(time[1]:10,"[x]  ", time[2])
+           escreval(time[1]:10,"[x]  ", time[3])
+           //Cálculos
+           t <- time[1]
+           time[1] <- time[2]
+           time[2] <- time[3]
+           time[3] <- t
+      fimpara
+fimalgoritmo

@@ -1,0 +1,30 @@
+algoritmo "Dependentes_Funcionário_CASO"
+var
+   //Declaração de Variáveis
+   nome: caractere
+   sal, nsal: real
+   dep: inteiro
+inicio
+      //Entrada de Dados
+      escreva("Qual o Nome do Funcionário? ")
+      leia(nome)
+      escreva("Qual o salário do Funcionário? R$")
+      leia(sal)
+      escreva("Qual é a quantidade de dependentes? ")
+      leia(dep)
+      
+      //Condicionais_CASO
+      escolha dep
+              caso 0
+                   nsal <- sal * 1.05
+              caso 1, 2, 3
+                   nsal <- sal * 1.1
+              caso 4, 5, 6
+                   nsal <- sal * 1.15
+              outrocaso
+                       nsal <- sal * 1.18
+      fimescolha
+      
+      escreval("")
+      escreva("O Novo Salário de ", nome, " será de R$", nsal:5:2, " Reais")
+fimalgoritmo

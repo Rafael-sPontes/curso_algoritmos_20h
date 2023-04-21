@@ -1,0 +1,30 @@
+algoritmo "ValoresPares"
+var
+   //Declaração de variáveis
+   val: vetor[1..7] de inteiro
+   i, TotPar: inteiro
+inicio
+      TotPar <- 0
+
+      //Repetiçao
+      para i <- 1 ate 7 faca
+           escreva("Digite o", i, "º valor: ")
+           leia(val[i])
+      fimpara
+      
+      escreval()
+      
+      //Repetição
+      para i <- 1 ate 7 faca
+
+           //Condicional
+           se (val[i] % 2 = 0) entao
+              TotPar <- TotPar + 1
+              escreval("Valor PAR na posição: ", i)
+           fimse
+      fimpara
+      
+      //Saída de dados
+      escreval()
+      escreval("A Quantidade de números pares é igual: ", TotPar)
+fimalgoritmo

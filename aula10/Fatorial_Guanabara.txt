@@ -1,0 +1,25 @@
+algoritmo "Fatorial_Guanabara"
+var
+   //Declaração de variáveis
+   cont, n, fat: inteiro
+inicio
+      //Entrada de dados
+      escreval("")
+      escreva("Digite um número: ")
+      leia(n)
+      
+      //Declaração de valores
+      cont <- n
+      fat <- 1
+      
+      //Condicional
+      repita
+            escreva(cont, " x")
+            fat <- fat * cont
+            cont <- cont - 1
+      ate (cont < 1)
+      
+      escreval("")
+      escreva("O valor do fatorial de", n, " é igual: ", fat)
+      escreval("")
+fimalgoritmo

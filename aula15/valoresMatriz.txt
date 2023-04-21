@@ -1,0 +1,66 @@
+algoritmo "valoresMatriz"
+var
+   //Declaração de variáveis
+   m: vetor[1..4, 1..4] de inteiro
+   l, c, sDP, p2L, mV3: inteiro
+inicio
+      //Declaração de valores
+      sDP <- 0
+      p2L <- 1
+      mV3 <- 0
+      
+      //Repetição
+      para l <- 1 ate 4 faca
+           //Repetição
+           para c <- 1 ate 4 faca
+                //Saída de dados
+                escreva("Digite o valor da posição [", l,",", c,"] : ")
+                leia(m[l,c])
+                //Condicional
+                se (l = c) entao
+                   sDP <- sDP + m[l,c]
+                fimse
+           fimpara
+      fimpara
+      
+      //Título
+      escreval()
+      escreval("--------")
+      escreval(" MATRIZ ")
+      escreval("--------")
+      
+      //Repetição
+      para l <- 1 ate 4 faca
+           //Repetição
+           para c <- 1 ate 4 faca
+                //Condicional
+                se (l = c) entao
+                   //Saída de dados
+                   escreva(m[l,c]:4, "_")
+                senao
+                     //Saída de dados
+                     escreva(m[l,c]:4)
+                fimse
+           fimpara
+           escreval()
+      fimpara
+      
+      //Repetiçao
+      para c <- 1 ate 4 faca
+           p2L <- p2L * m[2,c]
+      fimpara
+      
+      //Repetição
+      para l <- 1 ate 4 faca
+           //Condicional
+           se (m[l,3] > mV3) entao
+              mV3 <- m[l,3]
+           fimse
+      fimpara
+      
+      //Saída de dados
+      escreval()
+      escreval("A soma dos valores da Diagonal Principal é igual:", sDP)
+      escreval("O Produto dos valores da 2º linha é igual: ", p2L)
+      escreval("O maior valor da 3º coluna é igual: ", mV3)
+fimalgoritmo

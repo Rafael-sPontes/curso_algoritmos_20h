@@ -1,0 +1,33 @@
+algoritmo "Média_entre_dois_números_PROCEDIMENTO"
+var
+   //Declaração de variáveis
+   n1, n2, soma: inteiro
+   media: numerico
+   
+procedimento somar(v1, v2: inteiro)
+inicio
+      //Cálculo
+      soma <- (n1 + n2)
+fimprocedimento
+
+procedimento medn(v1, v2: numerico)
+inicio
+      //Cálculo
+      media <- soma / 2
+fimprocedimento
+
+inicio
+      //Entrada de dados
+      escreva ("Digite o primeiro número: ")
+      leia (n1)
+      escreva ("Digite o segundo número: ")
+      leia (n2)
+      
+      //Procedimentos
+      somar(n1, n2)
+      medn(n1, n2)
+      
+      //Saída de dados
+      escreval("A soma entre (", n1, " e", n2, " ) é igual a:", soma)
+      escreval("A média de (", n1, " e", n2, " ) é igual a:", media)
+fimalgoritmo

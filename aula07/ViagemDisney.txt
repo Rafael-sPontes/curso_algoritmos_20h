@@ -1,0 +1,17 @@
+algoritmo "ViagemDisney"
+var
+   //declaração de variáveis
+   dinheiro, restante: real
+inicio
+      //entrada de dados
+      escreval("Tenho dinheiro tenho para ir para a Disney?")
+      leia(dinheiro)
+      
+      //Condicionais
+      se (dinheiro >= 10000) entao
+         escreva("Tenho R$", dinheiro:5:2 ,", então #PartiuDisney")
+      senao
+           restante <- 10000 - dinheiro
+           escreva("Tenho apenas R$", dinheiro:5:2, ", ainda preciso de pelo menos R$", restante:5:2, ", para juntar R$10000.")
+      fimse
+fimalgoritmo

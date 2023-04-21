@@ -1,0 +1,25 @@
+algoritmo "Operações_simples"
+var
+   n1, n2: inteiro
+   soma, sub, mult, divnt, modl: inteiro
+   divd, expo: numerico
+inicio
+      escreva ("Digite o primeiro número: ")
+      leia (n1)
+      escreva ("Digite o segundo número: ")
+      leia (n2)
+      soma <- n1 + n2
+      sub <- n1 - n2
+      mult <- n1 * n2
+      divd <- n1 / n2
+      divnt <- n1 \ n2
+      expo <- n1 ^ n2
+      modl <- n1 % n2
+      escreva ("Soma =", soma)
+      escreva ("Subtração =", sub)
+      escreva ("Multiplicação =", mult)
+      escreva ("Divisão =", divd)
+      escreva ("Divisão Inteira =", divnt)
+      escreva ("Exponencial =", expo)
+      escreva ("Módulo =", modl)
+fimalgoritmo

@@ -1,0 +1,22 @@
+algoritmo "Somador_REPITA"
+var
+   //Declaração de variáveis
+   n, s, cont: inteiro
+   resp: caractere
+inicio
+      //Declaração de valores
+      s <- 0
+      cont <- 1
+      resp <- "S"
+      
+      //Condicional
+      repita
+            escreva("Digite o", cont, "º valor: ")
+            leia(n)
+            s <- s + n
+            escreva("Você quer continuar? [S/N]: ")
+            leia(resp)
+            cont <- cont + 1
+      ate (resp = "N")
+      escreva("A soma de todos os valores digitados é igual: ", s)
+fimalgoritmo

@@ -1,0 +1,44 @@
+algoritmo "ContagemInteligente"
+var
+   //Declaração de variáveis
+   ini, fim, cont: inteiro
+inicio
+      //Título
+      escreval("----------------------")
+      escreval(" CONTAGEM INTELIGENTE ")
+      escreval("----------------------")
+      escreval("")
+      
+      //Entrada de Dados
+      escreva("Início: ")
+      leia(ini)
+      escreva("Fim: ")
+      leia(fim)
+      escreval("")
+      
+      //Condicionais
+      se (fim >= ini) entao
+         escreval("-----------------------")
+         escreval("    C O N T A G E M    ")
+         escreval(" P R O G R E S S I V A ")
+         escreval("-----------------------")
+         escreval("")
+         cont <- ini
+         enquanto (cont <= fim) faca
+                  escreva(cont, "...")
+                  cont <- cont + 1
+         fimenquanto
+      senao
+           escreval("---------------------")
+           escreval("   C O N T A G E M   ")
+           escreval(" R E G R E S S I V A ")
+           escreval("---------------------")
+           escreval("")
+           cont <- ini
+           enquanto (cont >= fim) faca
+                    escreva(cont, "...")
+                    cont <- cont - 1
+           fimenquanto
+      fimse
+      escreval("")
+fimalgoritmo

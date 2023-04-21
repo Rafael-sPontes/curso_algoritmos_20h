@@ -1,0 +1,20 @@
+algoritmo "Creuza05"
+var
+   //declaração de variáveis
+   parcelas: inteiro
+   emprestimo, valor_parcela, valor_devedor: real
+inicio
+      //entrada de dados
+      escreva("Qual o valor do emprestimo? ")
+      leia(emprestimo)
+      escreva("Quantas parcelas? ")
+      leia(parcelas)
+      
+      //Operações e Cálculos
+      valor_devedor <- emprestimo * 1.2
+      valor_parcela <- valor_devedor / parcelas
+      
+      //Resultado
+      escreval("Vou pagar", parcelas, "x parcelas, no valor de R$",valor_parcela, " Reais.")
+      escreva("Totalizando uma dívida de R$",valor_devedor, " Reais!" )
+fimalgoritmo

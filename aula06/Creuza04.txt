@@ -1,0 +1,9 @@
+algoritmo "Creuza04"
+var
+   preco, imposto: real
+inicio
+      escreval("Qual é o preço do produto?")
+      leia(preco)
+      imposto <- preco*0.6
+      escreva("O valor do imposto é de US$", imposto:5:2, " dólares")
+fimalgoritmo

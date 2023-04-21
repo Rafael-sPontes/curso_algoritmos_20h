@@ -1,0 +1,9 @@
+algoritmo "Calculadora_seno_ângulo"
+var
+   angulo, s: real
+inicio
+      escreva ("informe um ângulo: ")
+      leia (angulo)
+      s <- sen(grauprad(angulo))
+      escreva ("O seno de", angulo, " é igual a:", s)
+fimalgoritmo

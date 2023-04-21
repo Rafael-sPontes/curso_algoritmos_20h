@@ -1,0 +1,17 @@
+algoritmo "Calculadora_Escolha"
+var
+   intr: inteiro
+   n1, absl, expo, raizquad, rpi, seno, cose, tang, grad: real
+inicio
+      escreva ("Digite o número: ")
+      leia (n1)
+      intr <- int(n1)
+      absl <- abs(n1)
+      expo <- exp(n1)
+      raizquad <- raizq(n1)
+      rpi <- pi(n1)
+      seno <- sen(n1)
+      cose <- cos(n1)
+      tang <- tan(n1)
+      grad <- grauprad(n1)
+fimalgoritmo

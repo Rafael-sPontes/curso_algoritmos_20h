@@ -1,0 +1,34 @@
+algoritmo "exe01_Está_Apto_a_Dirigir"
+var
+   //Declaração de Variáveis
+   ano, nasc, apto: inteiro
+inicio
+      //Título
+      escreval("------------------------------")
+      escreval("  DEPARTAMENTO DE TRÂNSITO")
+      escreval("------------------------------")
+      escreval("")
+
+      //Entrada de Dados
+      escreva("Digite o ano atual: ")
+      leia(ano)
+      escreva("Digite o ano de Nascimento: ")
+      leia(nasc)
+      escreval("")
+
+      //Cálculos
+      apto <- ano - nasc
+
+      //Condicionais
+      se (apto >= 18) entao
+         escreval("--------STATUS--------")
+         escreval("IDADE:", apto," anos")
+         escreval("APTO A TIRAR A CNH")
+         escreval("----------------------")
+      senao
+           escreval("--------STATUS--------")
+           escreval("IDADE:", apto," anos")
+           escreval("INÁPTO A TIRAR A CNH")
+           escreval("----------------------")
+      fimse
+fimalgoritmo

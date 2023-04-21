@@ -1,0 +1,27 @@
+algoritmo "SomadorNumérico"
+var
+   //Declaração de variáveis
+   cont, num, soma, maior, menor: inteiro
+inicio
+      //Entrada de dados
+      cont <- 1
+      num <- 0
+      soma <- 0
+
+      enquanto (cont <= 10) faca
+               escreva("Digite o", cont,"º número: ")
+               leia(num)
+               se (num > maior) entao
+                  maior <- num
+               fimse
+               se (num < menor) entao
+               menor <- num
+               fimse
+               soma <- soma + num
+               cont <- cont + 1
+      fimenquanto
+
+      escreval("A soma dos 10 números é igual a:", soma)
+      escreval("O menor valor digitado foi:", menor)
+      escreval("O maior valor digitado foi:", maior)
+fimalgoritmo

@@ -1,0 +1,35 @@
+algoritmo "Fatorial_Inteligente"
+var
+   //Declaração de variáveis
+   cont, n, fat: inteiro
+   resp: caractere
+inicio
+      repita
+            //Entrada de dados
+            escreval("")
+            escreva("Digite um número: ")
+            leia(n)
+            escreval("")
+
+            //Declaração de valores
+            cont <- n
+            fat <- 1
+
+            //Condicional
+            escreva("A conta:")
+            repita
+                  escreva(cont, " x")
+                  fat <- fat * cont
+                  cont <- cont - 1
+            ate (cont < 1)
+
+            escreval("")
+            escreval("O valor do fatorial de", n, " é igual: ", fat)
+
+            escreval("")
+            escreva("Quer continuar? [S/N]: ")
+            leia(resp)
+            
+            limpatela
+      ate (resp = "N")
+fimalgoritmo

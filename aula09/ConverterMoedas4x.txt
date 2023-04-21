@@ -1,0 +1,20 @@
+algoritmo "ConverterMoedas4X"
+var
+   //Declaração de variáveis
+   cont, quant: inteiro
+   reai, dolar: real
+inicio
+      //Entrada de Dados
+      cont <- 1
+
+      escreva("Quantas vezes você quer converter? ")
+      leia(quant)
+
+      enquanto (cont <= quant) faca
+               escreva("Qual o", cont ,"º valor em R$? ")
+               leia(reai)
+               dolar <- reai / 4.87
+               escreval("O valor convertido é US$", dolar:5:2)
+               cont <- cont + 1
+      fimenquanto
+fimalgoritmo

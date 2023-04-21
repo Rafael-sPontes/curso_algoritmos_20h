@@ -1,0 +1,31 @@
+algoritmo "Fatorial_FUNCAO"
+var
+   //Declaração de variáveis
+   n, f: inteiro
+   
+funcao fatorial(v: inteiro): inteiro
+var
+   cont, r: inteiro
+inicio
+      r <- 1
+      
+      //Condicional
+      para cont <- 1 ate v faca
+           r <- r * cont
+      fimpara
+      
+      //Variável de retorno
+      retorne r
+fimfuncao
+
+inicio
+      //Entrada de dados
+      escreva("Digite o número: ")
+      leia(n)
+      
+      //Chamada de função
+      f <- fatorial(n)
+      
+      //Saída de dados
+      escreva("O valor de [", n, " ]! é igual: ", f)
+ fimalgoritmo

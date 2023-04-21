@@ -1,0 +1,45 @@
+algoritmo "Operações_simples_PROCEDIMENTO"
+var
+   //Declaração de variáveis
+   n1, n2: inteiro
+   soma, sub, mult, divnt, modl: inteiro
+   divd, expo: numerico
+
+procedimento calcInt(v1, v2: inteiro)
+inicio
+      //Cálculos
+      soma <- v1 + v2
+      sub <- v1 - v2
+      mult <- v1 * v2
+      divnt <- v1 \ v2
+      modl <- v1 % v2
+fimprocedimento
+
+procedimento calcReal(v1, v2: real)
+inicio
+      //Cálculos
+      divd <- v1 / v2
+      expo <- v1 ^ v2
+fimprocedimento
+
+inicio
+      //Entrada de dados
+      escreva ("Digite o primeiro número: ")
+      leia (n1)
+      escreva ("Digite o segundo número: ")
+      leia (n2)
+
+      //Procedimentos
+      calcInt(n1, n2)
+      calcReal(n1, n2)
+
+      //Saída de dados
+      escreval()
+      escreval("Soma =", soma)
+      escreval("Subtração =", sub)
+      escreval("Multiplicação =", mult)
+      escreval("Divisão =", divd)
+      escreval("Divisão Inteira =", divnt)
+      escreval("Exponencial =", expo)
+      escreval("Módulo =", modl)
+fimalgoritmo

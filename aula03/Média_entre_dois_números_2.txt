@@ -1,0 +1,17 @@
+algoritmo "Média_entre_dois_números_2"
+var
+   //Declaração de variáveis
+   n1, n2, media: real
+inicio
+      //Entrada de dados
+      escreva ("Digite o primeiro número: ")
+      leia (n1)
+      escreva ("Digite o segundo número: ")
+      leia (n2)
+      
+      //Cálculos
+      media <- (n1 + n2) / 2
+      
+      //Saída de dados
+      escreva ("A média de (", n1, " e", n2, " ) é igual a:", media)
+fimalgoritmo

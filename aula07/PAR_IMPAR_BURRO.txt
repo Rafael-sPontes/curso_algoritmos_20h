@@ -1,0 +1,19 @@
+algoritmo "PAR_IMPAR"
+var
+   //declaração de variáveis
+   num, res: inteiro
+inicio
+      //entrada de dados
+      escreva("Digite um número: ")
+      leia (num)
+
+      //Cálculos
+      res <- num % 2
+
+      //Condicionais
+      se (res = 0) entao
+         escreva("O número digitado:", num, " é [PAR]")
+      senao
+           escreva("O número digitado:", num, " é [IMPAR]")
+      fimse
+fimalgoritmo

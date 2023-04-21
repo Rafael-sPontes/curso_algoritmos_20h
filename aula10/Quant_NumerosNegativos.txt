@@ -1,0 +1,28 @@
+algoritmo "Quant_NumerosNegativos"
+var
+   //Declaração de variáveis
+   n, cont, neg: inteiro
+   resp: caractere
+inicio
+      //Declaração de valores
+      cont <- 1
+      resp <- "S"
+      neg <- 0
+      
+      //Condicional
+      repita
+            escreva("Digite o", cont, "º valor: ")
+            leia(n)
+            
+            //Condicional
+            se (n < 0) entao
+               neg <- neg + 1
+            fimse
+            
+            escreva("Você quer continuar? [S/N]: ")
+            leia(resp)
+            cont <- cont + 1
+      ate (resp = "N")
+      
+      escreva("Você digitou", neg, " números negativos")
+fimalgoritmo

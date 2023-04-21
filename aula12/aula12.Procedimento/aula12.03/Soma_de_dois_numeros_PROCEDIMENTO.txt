@@ -1,0 +1,24 @@
+algoritmo "Soma_de_dois_numeros_PROCEDIMENTO"
+var
+   //Declaração de variáveis
+   n1, n2, soma: inteiro
+
+procedimento somar(v1, v2: inteiro)
+inicio
+      //Cálculos
+      soma <- v1 + v2
+fimprocedimento
+
+inicio
+      //Entrada de dados
+      escreva ("Digite o primeiro número: ")
+      leia (n1)
+      escreva ("Digite o segundo número: ")
+      leia (n2)
+
+	  //Procedimento
+      somar(n1, n2)
+
+      //Saída de dados
+      escreva ("A soma de (", n1, " +", n2, " ) é igual a:", soma)
+fimalgoritmo

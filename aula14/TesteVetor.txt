@@ -1,0 +1,17 @@
+algoritmo "TesteVetor"
+var
+   //Declaração de variáveis
+   v: vetor[1..10] de inteiro
+   c: inteiro
+inicio
+      //Repetição
+      para c <- 1 ate 10 faca
+           escreva("Digite o", c, "º valor: ")
+           leia(v[c])
+      fimpara
+
+      //Repetição
+      para c <- 1 ate 10 faca
+           escreva("[", v[c], " ]")
+      fimpara
+fimalgoritmo

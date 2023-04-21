@@ -1,0 +1,71 @@
+algoritmo "CorrigindoProvas"
+var
+   //Declaração de variáveis
+   gab: vetor[1..5] de caractere
+   aluno: vetor[1..3] de caractere
+   resp: vetor[1..5] de caractere
+   nota: vetor[1..3] de real
+   medsala: real
+   i, j: inteiro
+inicio
+      //Título
+      escreval("--------------------------------")
+      escreval(" PASSO 1 - CADASTRO DE GABARITO ")
+      escreval("--------------------------------")
+      //Repetição
+      para j <- 1 ate 5 faca
+           //Entrada de dados
+           escreva("Questão", j,": ")
+           leia(gab[j])
+      fimpara
+      
+      limpaTela
+      
+      //Repetição
+      para i <- 1 ate 3 faca
+           //Declaração de valores
+           nota[i] <- 0
+           //Título
+           escreval("-----------------")
+           escreval(" PROVA - ALUNO ", i)
+           escreval("-----------------")
+           //Entrada de dados
+           escreva("Nome: ")
+           leia(aluno[i])
+           escreval()
+           escreval("RESPOSTAS:")
+           //Repetição
+           para j <- 1 ate 5 faca
+                //Entrada de dados
+                escreva("Questão", j,": ")
+                leia(resp[j])
+                //Condicional
+                se (resp[j] = gab[j]) entao
+                   nota[i] <- nota[i] + 2
+                fimse
+           fimpara
+           
+           limpaTela
+           
+      fimpara
+      
+      limpaTela
+      
+      //Título
+      escreval("--------------")
+      escreval(" NOTAS FINAIS ")
+      escreval("--------------")
+      
+      //Repetição
+      para i <- 1 ate 3 faca
+           //Saída de dados
+           escreval(aluno[i]:10," ", nota[i]:1:1)
+      fimpara
+      
+      //Cálculos
+      medsala <- (nota[1] + nota[2] + nota[3]) / 3
+      
+      //Saída de dados
+      escreval("------------------------")
+      escreva("Média da Turma: ", medsala:1:1)
+fimalgoritmo

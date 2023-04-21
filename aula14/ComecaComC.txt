@@ -1,0 +1,35 @@
+algoritmo "ComecaComC"
+var
+   //Declaração de variáveis
+   nome: caractere
+   soc: vetor[1..10] de caractere
+   c, tot: inteiro
+inicio
+      //Declaração de valores
+      tot <- 0
+
+      //Repetição
+      para c <- 1 ate 10 faca
+      
+           //Entrada de dados
+           escreva("Digite seu nome: ")
+           leia(nome)
+           
+           //Condicional
+           se (copia(maiusc(nome), 1, 1) = "C") =  entao
+              tot <- tot + 1
+              soc[tot] <- nome
+           fimse
+      fimpara
+      
+      limpaTela
+      
+      //Título
+      escreval(" LISTAGEM FINAL ")
+      escreval("----------------")
+      
+      //Repetição
+      para c <- 1 ate 10 faca
+           escreval(soc[c])
+      fimpara
+fimalgoritmo
